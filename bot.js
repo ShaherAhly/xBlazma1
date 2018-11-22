@@ -10,22 +10,6 @@ client.on('message', message => {
         message.reply('pong');
       }
 });
-
-client.on('ready', async() => {
-var server = "493310015785140225"; // ايدي السررفر
-var channel = "494265034789093386";//ايدي الروم
-    setInterval(()=>{
-    client.guilds.get(server).channels.get(channel).send('**كودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودز **')
-    },305);
-})
-
-client.on('ready', async() => {
-var server = "493310015785140225"; // ايدي السررفر
-var channel = "494265034789093386";//ايدي الروم
-    setInterval(()=>{
-    client.guilds.get(server).channels.get(channel).send('#daily')
-    },86400);
-})
 client.on("message", async message => {
   if(message.author.bot) return;
   if(message.channel.type === "dm") return;
@@ -47,4 +31,5 @@ client.on("message", async message => {
   message.channel.send(`${botmessage}`);
   }
 });
+
 client.login(process.env.BOT_TOKEN);
